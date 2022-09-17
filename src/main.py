@@ -1,27 +1,42 @@
-import random
-from task3 import decorator_1
+import math
+from task1 import timer_func
+@timer_func
+def quadratic_equation_solver(a, b, c):
+    if a == 0:
+        print('incorrect input')
+        return 1
 
-@decorator_1
-def func():
-    print("I am ready to Start")
-    result = 0
-    n =  random.randint(10,751)
-    for i in range(n):
-        result += (i**2)
-        
-@decorator_1
-def funx(n=2, m=5):
-    print("I am ready to do serious stuff")
-    max_val = float('-inf')
-    n =  random.randint(10,751)
-    res = [pow(i,2) for i in range(n)]
-    for i in res:
-        if i > max_val: 
-            max_val = i
+    # calculating discriminant using formula
+    dis = b * b - 4 * a * c
+    sqrt_val = math.sqrt(abs(dis))
+
+    # checking condition for discriminant
+    if dis > 0:
+        print(" real and different roots ")
+        print((-b + sqrt_val)/(2 * a))
+        print((-b - sqrt_val)/(2 * a))
     
-if __name__ == "__main__": 
-    func()
-    funx()
-    func()
-    funx()
-    func()
+    elif dis == 0:
+        print(" real and same roots")
+        print(-b / (2 * a))
+    else:
+        print("Complex Roots")
+        print(- b / (2 * a), " + i", sqrt_val)
+        print(- b / (2 * a), " - i", sqrt_val)
+
+@timer_func
+def pascal_triangle(n):
+    for i in range(n):
+        # adjust space
+        print(' '*(n-i), end='')
+
+        # compute power of 11
+        print(' '.join(map(str, str(11**i))))
+
+
+if __name__ == '__main__':
+    
+    pascal_triangle(5)
+    quadratic_equation_solver(1,2,3)
+    pascal_triangle(5)
+    quadratic_equation_solver(1,2,3)
