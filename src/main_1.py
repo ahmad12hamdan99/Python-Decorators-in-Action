@@ -1,7 +1,7 @@
 import random
-from task3 import decorator_1
+from task3 import decorator_3
 
-@decorator_1
+@decorator_3
 def func():
     print("I am ready to Start")
     result = 0
@@ -9,7 +9,7 @@ def func():
     for i in range(n):
         result += (i**2)
         
-@decorator_1
+@decorator_3
 def funx(n=2, m=5):
     print("I am ready to do serious stuff")
     max_val = float('-inf')
@@ -19,7 +19,7 @@ def funx(n=2, m=5):
         if i > max_val: 
             max_val = i
     
-if __name__ == "__main_1__": 
+if __name__ == "__main__": 
     func()
     funx()
     func()
