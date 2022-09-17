@@ -1,6 +1,6 @@
 import math
-from task1 import timer_func
-@timer_func
+from task1 import decorator_1
+@decorator_1
 def quadratic_equation_solver(a, b, c):
     if a == 0:
         print('incorrect input')
@@ -24,7 +24,7 @@ def quadratic_equation_solver(a, b, c):
         print(- b / (2 * a), " + i", sqrt_val)
         print(- b / (2 * a), " - i", sqrt_val)
 
-@timer_func
+@decorator_1
 def pascal_triangle(n):
     for i in range(n):
         # adjust space

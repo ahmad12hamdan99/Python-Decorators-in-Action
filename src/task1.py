@@ -1,6 +1,6 @@
 from time import time
 
-def timer_func(func):
+def decorator_1(func):
     # This function shows the execution time of 
     # the function object passed
     def wrap_func(*args, **kwargs):
@@ -8,7 +8,7 @@ def timer_func(func):
         t1 = time()
         result = func(*args, **kwargs)
         t2 = time()
-        print(f'Function {func.__name__!r} executed in {(t2-t1):.4f}s and called {wrap_func.calls}')
+        print(f'{func.__name__} call {wrap_func.calls} excuted in {(t2-t1):.4f} sec')
         return func
     wrap_func.calls = 0
     return wrap_func
