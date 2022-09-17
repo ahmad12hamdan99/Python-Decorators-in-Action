@@ -1,7 +1,15 @@
 import math
 from task1 import decorator_1
-@decorator_1
+from task2 import decorator_2
+
+
+@decorator_2
 def quadratic_equation_solver(a, b, c):
+    """
+    This function does something useful 
+    :param bar1: description
+    :param bar2: description
+    """ 
     if a == 0:
         print('incorrect input')
         return 1
@@ -24,8 +32,12 @@ def quadratic_equation_solver(a, b, c):
         print(- b / (2 * a), " + i", sqrt_val)
         print(- b / (2 * a), " - i", sqrt_val)
 
-@decorator_1
+@decorator_2
 def pascal_triangle(n):
+    """
+    This function prints the pascal triangle
+    :param n: number of rows
+    """ 
     for i in range(n):
         # adjust space
         print(' '*(n-i), end='')
@@ -36,7 +48,12 @@ def pascal_triangle(n):
 
 if __name__ == '__main__':
     
-    pascal_triangle(5)
+    # pascal_triangle(5)
+    # quadratic_equation_solver(1,2,3)
+    # pascal_triangle(5)
+    # quadratic_equation_solver(1,2,3)
+    # quadratic_equation_solver(1,2,3)
+    # pascal_triangle(10)
+
     quadratic_equation_solver(1,2,3)
     pascal_triangle(5)
-    quadratic_equation_solver(1,2,3)
