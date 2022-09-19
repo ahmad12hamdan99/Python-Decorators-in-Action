@@ -57,4 +57,5 @@ if __name__ == '__main__':
     pascal(5)
     solver(1,2,3)
     pascal(5)
+    decorator_3.ranking()
 
