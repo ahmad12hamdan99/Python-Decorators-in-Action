@@ -9,7 +9,7 @@ def decorator_1(func):
         result = func(*args, **kwargs)
         t2 = time()
         print(f'{func.__name__} call {wrap_func.calls} excuted in {(t2-t1):.4f} sec')
-        return func
+        return result
     wrap_func.calls = 0
     return wrap_func
   

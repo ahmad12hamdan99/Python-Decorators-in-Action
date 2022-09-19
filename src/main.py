@@ -4,15 +4,14 @@ from task2 import decorator_2
 
 
 @decorator_2
-def quadratic_equation_solver(a, b, c):
+def solver(a, b, c):
     """
     This function does something useful 
     :param bar1: description
     :param bar2: description
     """ 
     if a == 0:
-        print('incorrect input')
-        return 1
+        return 'incorrect input'
 
     # calculating discriminant using formula
     dis = b * b - 4 * a * c
@@ -20,20 +19,18 @@ def quadratic_equation_solver(a, b, c):
 
     # checking condition for discriminant
     if dis > 0:
-        print(" real and different roots ")
-        print((-b + sqrt_val)/(2 * a))
-        print((-b - sqrt_val)/(2 * a))
+        #print(" real and different roots ")
+        return [(-b + sqrt_val)/(2 * a), (-b - sqrt_val)/(2 * a)]
     
     elif dis == 0:
-        print(" real and same roots")
-        print(-b / (2 * a))
+        #print(" real and same roots")
+        return [-b / (2 * a)]
     else:
-        print("Complex Roots")
-        print(- b / (2 * a), " + i", sqrt_val)
-        print(- b / (2 * a), " - i", sqrt_val)
+        #print("Complex Roots")
+        return [str(-b / (2 * a)) + " + i" + str(sqrt_val) , str(-b / (2 * a)) + " - i" + str(sqrt_val)]
 
 @decorator_2
-def pascal_triangle(n):
+def pascal(n):
     """
     This function prints the pascal triangle
     :param n: number of rows
@@ -55,5 +52,8 @@ if __name__ == '__main__':
     # quadratic_equation_solver(1,2,3)
     # pascal_triangle(10)
 
-    quadratic_equation_solver(1,2,3)
-    pascal_triangle(5)
+    solver(1,2,3)
+    pascal(5)
+    solver(1,2,3)
+    pascal(5)
+

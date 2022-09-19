@@ -2,15 +2,6 @@ import inspect
 from time import time
 import inspect
 
-def inspector(func,*args, **kwargs):
-    print(f'Name:\t{func.__name__}')
-    print(f'Type:\t{type(func)}')
-    print(f'Signs:\t{inspect.signature(func)}')
-    #print(f'Args:\t{inspect.FullArgSpec(func)}')
-    print(f'Doc:\t{inspect.getdoc(func)}')
-    print(f'Source:\t{inspect.getsource(func)}')
-    print('Output:', end='\t')
-    func(*args, **kwargs)
     
 
 def decorator_2(func):
@@ -22,7 +13,12 @@ def decorator_2(func):
         result = func(*args, **kwargs)
         t2 = time()
         print(f'{func.__name__} call {wrap_func.calls} excuted in {(t2-t1):.4f} sec')
-        inspector(func,*args, **kwargs)
-        #return func
+        print(f'Name:\t{func.__name__}')
+        print(f'Type:\t{type(func)}')
+        print(f'Signs:\t{inspect.signature(func)}')
+        print(f'Args: \tpositional {args} \n\tkey_worded {kwargs}\n')
+        print(f'Doc:\t{inspect.getdoc(func)}'.replace('\n', '\n\t'), end='\n\n')
+        print(f'Source:\t{inspect.getsource(func)}'.replace('\n', '\n\t'), end='\n')
+        print(f'Output:\t{result}'.replace('\n', '\n\t'))
     wrap_func.calls = 0
     return wrap_func
