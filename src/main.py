@@ -1,9 +1,10 @@
 import math
 from task1 import decorator_1
 from task2 import decorator_2
+from task3 import decorator_3
 
 
-@decorator_2
+@decorator_3
 def solver(a, b, c):
     """
     This function does something useful 
@@ -29,7 +30,7 @@ def solver(a, b, c):
         #print("Complex Roots")
         return [str(-b / (2 * a)) + " + i" + str(sqrt_val) , str(-b / (2 * a)) + " - i" + str(sqrt_val)]
 
-@decorator_2
+@decorator_3
 def pascal(n):
     """
     This function prints the pascal triangle
