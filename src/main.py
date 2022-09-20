@@ -5,8 +5,8 @@ from task3 import decorator_3
 from task4 import decorator_4
 
 
-#@decorator_4
-@decorator_2
+@decorator_4
+@decorator_3
 def solver(a, b, c):
     """
     This function does something useful 
@@ -22,17 +22,17 @@ def solver(a, b, c):
 
     # checking condition for discriminant
     if dis > 0:
-        #print(" real and different roots ")
         return [(-b + sqrt_val)/(2 * a), (-b - sqrt_val)/(2 * a)]
     
     elif dis == 0:
-        #print(" real and same roots")
         return [-b / (2 * a)]
     else:
         #print("Complex Roots")
         return [str(-b / (2 * a)) + " + i" + str(sqrt_val) , str(-b / (2 * a)) + " - i" + str(sqrt_val)]
-#@decorator_4
-@decorator_2
+
+
+@decorator_4
+@decorator_3
 def pascal(n):
     """
     This function print pascal triangle
@@ -56,6 +56,6 @@ if __name__ == '__main__':
     pascal(5)
     solver(0,0,0)
     pascal(0)
-    #decorator_3.ranking()
-    #err(0)
+    decorator_3.ranking()
+    err(0)
 

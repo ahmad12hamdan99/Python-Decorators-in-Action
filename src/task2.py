@@ -17,7 +17,7 @@ def decorator_2(func):
         print(f'Name:\t{func.__name__}')
         print(f'Type:\t{type(func)}')
         print(f'Signs:\t{inspect.signature(func)}')
-        print(f'Args: \tpositional {args} \n\tkey_worded {kwargs}\n')
+        print(f'Args: \tpositional {args} \n\tkey=worded {kwargs}\n')
         print(f'Doc:\t{inspect.getdoc(func)}'.replace('\n', '\n\t'), end='\n\n')
         print(f'Source:\t{inspect.getsource(func)}'.replace('\n', '\n\t'), end='\n')
         print(f'Output:\t{result}'.replace('\n', '\n\n\t') + '\n')

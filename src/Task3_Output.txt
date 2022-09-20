@@ -1,4 +1,4 @@
-solver call 1 excuted in 1.2159347534179688e-05 sec
+solver call 1 excuted in 4.8160552978515625e-05 sec
 Name:	solver
 Type:	<class 'function'>
 Signs:	(a, b, c)
@@ -9,7 +9,8 @@ Doc:	This function does something useful
 		:param bar1: description
 		:param bar2: description
 
-Source:	@decorator_3
+Source:	@decorator_4
+		@decorator_3
 		def solver(a, b, c):
 		    """
 		    This function does something useful 
@@ -37,7 +38,7 @@ Source:	@decorator_3
 		
 Output:	['-1.0 + i2.8284271247461903', '-1.0 - i2.8284271247461903']
 
-pascal call 1 excuted in 2.765655517578125e-05 sec
+pascal call 1 excuted in 3.1948089599609375e-05 sec
 Name:	pascal
 Type:	<class 'function'>
 Signs:	(n)
@@ -48,7 +49,8 @@ Doc:	This function print pascal triangle
 		:param n: The number of pascal triangle rows
 		This function return None
 
-Source:	@decorator_3
+Source:	@decorator_4
+		@decorator_3
 		def pascal(n):
 		    """
 		    This function print pascal triangle
@@ -63,7 +65,7 @@ Source:	@decorator_3
 		
 Output:	None
 
-solver call 2 excuted in 1.1444091796875e-05 sec
+solver call 2 excuted in 5.9604644775390625e-06 sec
 Name:	solver
 Type:	<class 'function'>
 Signs:	(a, b, c)
@@ -74,7 +76,8 @@ Doc:	This function does something useful
 		:param bar1: description
 		:param bar2: description
 
-Source:	@decorator_3
+Source:	@decorator_4
+		@decorator_3
 		def solver(a, b, c):
 		    """
 		    This function does something useful 
@@ -102,7 +105,7 @@ Source:	@decorator_3
 		
 Output:	incorrect input
 
-pascal call 2 excuted in 1.3828277587890625e-05 sec
+pascal call 2 excuted in 1.33514404296875e-05 sec
 Name:	pascal
 Type:	<class 'function'>
 Signs:	(n)
@@ -113,7 +116,8 @@ Doc:	This function print pascal triangle
 		:param n: The number of pascal triangle rows
 		This function return None
 
-Source:	@decorator_3
+Source:	@decorator_4
+		@decorator_3
 		def pascal(n):
 		    """
 		    This function print pascal triangle
