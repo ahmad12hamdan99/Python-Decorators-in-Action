@@ -187,3 +187,18 @@ Source: @decorator_4
 
 Output: ['-1.0 + i2.8284271247461903', '-1.0 - i2.8284271247461903']
 ```
+
+## Task3:
+Implement the decorator behavior in tasks 1 & 2 using a class decorator. All the program output (from the decorator) should be dumped into a .txt file. Rank the 4 functions used to test the implementation and plot a rankings table.
+
+```console
+ahmad@WorkStation:~/Git/Python-Decorators-in-Action/src$ python3 main.py
+PROGRAM  |  RANK  |  TIME ELAPSED
+even          1       0.000009060s
+solver        2       0.000016689s
+pascal        3       0.000028133s
+func          4       0.000173092s
+funx          5       0.000198126s
+```
+
+
