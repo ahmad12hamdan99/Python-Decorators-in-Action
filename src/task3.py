@@ -2,6 +2,7 @@ from time import time
 from contextlib import redirect_stdout
 import io
 import inspect
+
 class decorator_3:
     dic_time = {}
 
