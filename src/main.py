@@ -2,8 +2,10 @@ import math
 from task1 import decorator_1
 from task2 import decorator_2
 from task3 import decorator_3
+from task4 import decorator_4
 
 
+@decorator_4
 @decorator_3
 def solver(a, b, c):
     """
@@ -29,7 +31,7 @@ def solver(a, b, c):
     else:
         #print("Complex Roots")
         return [str(-b / (2 * a)) + " + i" + str(sqrt_val) , str(-b / (2 * a)) + " - i" + str(sqrt_val)]
-
+@decorator_4
 @decorator_3
 def pascal(n):
     """
@@ -43,6 +45,10 @@ def pascal(n):
         # compute power of 11
         print(' '.join(map(str, str(11**i))))
 
+@decorator_4
+@decorator_3
+def err(n):
+    return 1/n
 
 if __name__ == '__main__':
     
@@ -55,7 +61,8 @@ if __name__ == '__main__':
 
     solver(1,2,3)
     pascal(5)
-    solver(1,2,3)
-    pascal(5)
+    solver(0,0,0)
+    pascal(0)
     decorator_3.ranking()
+    err(0)
 

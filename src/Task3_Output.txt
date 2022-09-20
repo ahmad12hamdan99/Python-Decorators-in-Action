@@ -1,4 +1,4 @@
-solver call 1 excuted in 2.7179718017578125e-05 sec
+solver call 1 excuted in 1.1920928955078125e-05 sec
 Name:	solver
 Type:	<class 'function'>
 Signs:	(a, b, c)
@@ -9,7 +9,8 @@ Doc:	This function does something useful
 		:param bar1: description
 		:param bar2: description
 
-Source:	@decorator_3
+Source:	@decorator_4
+		@decorator_3
 		def solver(a, b, c):
 		    """
 		    This function does something useful 
@@ -37,7 +38,7 @@ Source:	@decorator_3
 		
 Output:	['-1.0 + i2.8284271247461903', '-1.0 - i2.8284271247461903']
 
-pascal call 1 excuted in 4.1961669921875e-05 sec
+pascal call 1 excuted in 4.410743713378906e-05 sec
 Name:	pascal
 Type:	<class 'function'>
 Signs:	(n)
@@ -47,7 +48,8 @@ Args: 	positional (5,)
 Doc:	This function prints the pascal triangle
 		:param n: number of rows
 
-Source:	@decorator_3
+Source:	@decorator_4
+		@decorator_3
 		def pascal(n):
 		    """
 		    This function prints the pascal triangle
@@ -62,18 +64,19 @@ Source:	@decorator_3
 		
 Output:	None
 
-solver call 2 excuted in 1.6927719116210938e-05 sec
+solver call 2 excuted in 1.9073486328125e-06 sec
 Name:	solver
 Type:	<class 'function'>
 Signs:	(a, b, c)
-Args: 	positional (1, 2, 3) 
+Args: 	positional (0, 0, 0) 
 		key=worded {}
 
 Doc:	This function does something useful 
 		:param bar1: description
 		:param bar2: description
 
-Source:	@decorator_3
+Source:	@decorator_4
+		@decorator_3
 		def solver(a, b, c):
 		    """
 		    This function does something useful 
@@ -99,19 +102,20 @@ Source:	@decorator_3
 		        #print("Complex Roots")
 		        return [str(-b / (2 * a)) + " + i" + str(sqrt_val) , str(-b / (2 * a)) + " - i" + str(sqrt_val)]
 		
-Output:	['-1.0 + i2.8284271247461903', '-1.0 - i2.8284271247461903']
+Output:	incorrect input
 
-pascal call 2 excuted in 2.7894973754882812e-05 sec
+pascal call 2 excuted in 4.0531158447265625e-06 sec
 Name:	pascal
 Type:	<class 'function'>
 Signs:	(n)
-Args: 	positional (5,) 
+Args: 	positional (0,) 
 		key=worded {}
 
 Doc:	This function prints the pascal triangle
 		:param n: number of rows
 
-Source:	@decorator_3
+Source:	@decorator_4
+		@decorator_3
 		def pascal(n):
 		    """
 		    This function prints the pascal triangle
