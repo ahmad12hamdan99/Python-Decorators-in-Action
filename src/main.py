@@ -6,8 +6,8 @@ from task3 import decorator_3
 from task4 import decorator_4
 
 
-@decorator_4
-@decorator_3
+#@decorator_4
+@decorator_2
 def even(input_list):
     """
     This function return even numbers in the given list
@@ -66,7 +66,7 @@ def solver(a, b, c):
         return [str(-b / (2 * a)) + " + i" + str(sqrt_val) , str(-b / (2 * a)) + " - i" + str(sqrt_val)]
 
 
-@decorator_4
+#@decorator_4
 @decorator_3
 def pascal(n):
     """
@@ -93,15 +93,18 @@ def err(n):
 if __name__ == '__main__':
 
     func()
-    funx()
+    pascal(3)
     func()
-    funx()
-    func()
-    even([0,2,3,4,5,6])
-    solver(1,2,3)
-    pascal(5)
-    solver(0,0,0)
-    pascal(4)
+    pascal(3)
+    # funx()
+    # func()
+    # funx()
+    # func()
+    # even([0,2,3,4,5,6])
+    # solver(1,2,3)
+    # pascal(5)
+    # solver(0,0,0)
+    # pascal(4)
     decorator_3.ranking()
-    err(0)
+    # err(0)
 

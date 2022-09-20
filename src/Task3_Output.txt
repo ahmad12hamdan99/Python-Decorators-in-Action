@@ -1,4 +1,4 @@
-func call 1 excuted in 2.5272369384765625e-05 sec
+func call 1 excuted in 0.00014138221740722656 sec
 Name:	func
 Type:	<class 'function'>
 Signs:	()
@@ -15,168 +15,21 @@ Source:	@decorator_3
 		    for i in range(n):
 		        result += (i**2)
 		
-Output:	None
-
-funx call 1 excuted in 0.0002315044403076172 sec
-Name:	funx
-Type:	<class 'function'>
-Signs:	(n=2, m=5)
-Args: 	positional () 
-		key=worded {}
-
-Doc:	None
-
-Source:	@decorator_3
-		def funx(n=2, m=5):
-		    print("I am ready to do serious stuff")
-		    max_val = float('-inf')
-		    n =  random.randint(10,751)
-		    res = [pow(i,2) for i in range(n)]
-		    for i in res:
-		        if i > max_val: 
-		            max_val = i
+Output:	I am ready to Start
 		
-Output:	None
 
-func call 2 excuted in 7.224082946777344e-05 sec
-Name:	func
-Type:	<class 'function'>
-Signs:	()
-Args: 	positional () 
-		key=worded {}
-
-Doc:	None
-
-Source:	@decorator_3
-		def func():
-		    print("I am ready to Start")
-		    result = 0
-		    n =  random.randint(10,751)
-		    for i in range(n):
-		        result += (i**2)
-		
-Output:	None
-
-funx call 2 excuted in 0.00025582313537597656 sec
-Name:	funx
-Type:	<class 'function'>
-Signs:	(n=2, m=5)
-Args: 	positional () 
-		key=worded {}
-
-Doc:	None
-
-Source:	@decorator_3
-		def funx(n=2, m=5):
-		    print("I am ready to do serious stuff")
-		    max_val = float('-inf')
-		    n =  random.randint(10,751)
-		    res = [pow(i,2) for i in range(n)]
-		    for i in res:
-		        if i > max_val: 
-		            max_val = i
-		
-Output:	None
-
-func call 3 excuted in 0.00019669532775878906 sec
-Name:	func
-Type:	<class 'function'>
-Signs:	()
-Args: 	positional () 
-		key=worded {}
-
-Doc:	None
-
-Source:	@decorator_3
-		def func():
-		    print("I am ready to Start")
-		    result = 0
-		    n =  random.randint(10,751)
-		    for i in range(n):
-		        result += (i**2)
-		
-Output:	None
-
-even call 1 excuted in 1.0967254638671875e-05 sec
-Name:	even
-Type:	<class 'function'>
-Signs:	(input_list)
-Args: 	positional ([0, 2, 3, 4, 5, 6],) 
-		key=worded {}
-
-Doc:	This function return even numbers in the given list
-		:param input_list: List that we want to search for even number inside
-		This function return the even numbers in the list
-
-Source:	@decorator_4
-		@decorator_3
-		def even(input_list):
-		    """
-		    This function return even numbers in the given list
-		    :param input_list: List that we want to search for even number inside
-		    This function return the even numbers in the list
-		    """
-		    return list(filter(lambda x: x % 2 == 0, input_list))
-		
-Output:	[0, 2, 4, 6]
-
-solver call 1 excuted in 1.7881393432617188e-05 sec
-Name:	solver
-Type:	<class 'function'>
-Signs:	(a, b, c)
-Args: 	positional (1, 2, 3) 
-		key=worded {}
-
-Doc:	This function solve a quadratic equation a*x^2 + b*x + c = 0
-		:param a: x^2 coeffecient
-		:param b: x   coeffecient
-		:param c:     constant
-		This function return the solution if it exist in form of list 
-
-Source:	@decorator_4
-		@decorator_3
-		def solver(a, b, c):
-		    """
-		    This function solve a quadratic equation a*x^2 + b*x + c = 0
-		    :param a: x^2 coeffecient
-		    :param b: x   coeffecient
-		    :param c:     constant
-		    This function return the solution if it exist in form of list 
-		    """
-		    if a == 0:
-		        return 'incorrect input'
-		
-		    # calculating discriminant using formula
-		    dis = b * b - 4 * a * c
-		    sqrt_val = math.sqrt(abs(dis))
-		
-		    # checking condition for discriminant
-		    if dis > 0:
-		        #dis is positive -> 2 solution 
-		        return [(-b + sqrt_val)/(2 * a), (-b - sqrt_val)/(2 * a)]
-		    
-		    elif dis == 0:
-		        #dis is 0 -> duplicated solution
-		        return [-b / (2 * a)]
-		    else:
-		        #Complex Roots
-		        return [str(-b / (2 * a)) + " + i" + str(sqrt_val) , str(-b / (2 * a)) + " - i" + str(sqrt_val)]
-		
-Output:	['-1.0 + i2.8284271247461903', '-1.0 - i2.8284271247461903']
-
-pascal call 1 excuted in 3.886222839355469e-05 sec
+pascal call 1 excuted in 3.3855438232421875e-05 sec
 Name:	pascal
 Type:	<class 'function'>
 Signs:	(n)
-Args: 	positional (5,) 
+Args: 	positional (3,) 
 		key=worded {}
 
 Doc:	This function print pascal triangle
 		:param n: The number of pascal triangle rows
 		This function return None
 
-Source:	@decorator_4
-		@decorator_3
+Source:	@decorator_3
 		def pascal(n):
 		    """
 		    This function print pascal triangle
@@ -189,65 +42,43 @@ Source:	@decorator_4
 		        print(main_v)
 		        main_v = [left + right for left, right in zip(main_v + added_v, added_v + main_v)]
 		
-Output:	None
+Output:	[1]
+		[1, 1]
+		[1, 2, 1]
+		
 
-solver call 2 excuted in 2.86102294921875e-06 sec
-Name:	solver
+func call 2 excuted in 0.0003046989440917969 sec
+Name:	func
 Type:	<class 'function'>
-Signs:	(a, b, c)
-Args: 	positional (0, 0, 0) 
+Signs:	()
+Args: 	positional () 
 		key=worded {}
 
-Doc:	This function solve a quadratic equation a*x^2 + b*x + c = 0
-		:param a: x^2 coeffecient
-		:param b: x   coeffecient
-		:param c:     constant
-		This function return the solution if it exist in form of list 
+Doc:	None
 
-Source:	@decorator_4
-		@decorator_3
-		def solver(a, b, c):
-		    """
-		    This function solve a quadratic equation a*x^2 + b*x + c = 0
-		    :param a: x^2 coeffecient
-		    :param b: x   coeffecient
-		    :param c:     constant
-		    This function return the solution if it exist in form of list 
-		    """
-		    if a == 0:
-		        return 'incorrect input'
+Source:	@decorator_3
+		def func():
+		    print("I am ready to Start")
+		    result = 0
+		    n =  random.randint(10,751)
+		    for i in range(n):
+		        result += (i**2)
 		
-		    # calculating discriminant using formula
-		    dis = b * b - 4 * a * c
-		    sqrt_val = math.sqrt(abs(dis))
+Output:	I am ready to Start
 		
-		    # checking condition for discriminant
-		    if dis > 0:
-		        #dis is positive -> 2 solution 
-		        return [(-b + sqrt_val)/(2 * a), (-b - sqrt_val)/(2 * a)]
-		    
-		    elif dis == 0:
-		        #dis is 0 -> duplicated solution
-		        return [-b / (2 * a)]
-		    else:
-		        #Complex Roots
-		        return [str(-b / (2 * a)) + " + i" + str(sqrt_val) , str(-b / (2 * a)) + " - i" + str(sqrt_val)]
-		
-Output:	incorrect input
 
-pascal call 2 excuted in 1.7881393432617188e-05 sec
+pascal call 2 excuted in 3.0040740966796875e-05 sec
 Name:	pascal
 Type:	<class 'function'>
 Signs:	(n)
-Args: 	positional (4,) 
+Args: 	positional (3,) 
 		key=worded {}
 
 Doc:	This function print pascal triangle
 		:param n: The number of pascal triangle rows
 		This function return None
 
-Source:	@decorator_4
-		@decorator_3
+Source:	@decorator_3
 		def pascal(n):
 		    """
 		    This function print pascal triangle
@@ -260,5 +91,8 @@ Source:	@decorator_4
 		        print(main_v)
 		        main_v = [left + right for left, right in zip(main_v + added_v, added_v + main_v)]
 		
-Output:	None
+Output:	[1]
+		[1, 1]
+		[1, 2, 1]
+		
 
