@@ -1,6 +1,13 @@
 # Python-Decorators-in-Action
 This repository contains solutions for Software Design with Python course at Innopolis University Fall 2022
 
+## Intructions: 
+main.py imports all decorators and the user has the freedome to apply any of them to any function available in the main. just run 
+```console
+$python3 main.py
+
+```
+
 ## Task1: 
 Create a function decorator that calculates function execution time and the number of times the decorated function was called.
 
