@@ -1,4 +1,4 @@
-solver call 1 excuted in 1.1920928955078125e-05 sec
+solver call 1 excuted in 1.2159347534179688e-05 sec
 Name:	solver
 Type:	<class 'function'>
 Signs:	(a, b, c)
@@ -9,8 +9,7 @@ Doc:	This function does something useful
 		:param bar1: description
 		:param bar2: description
 
-Source:	@decorator_4
-		@decorator_3
+Source:	@decorator_3
 		def solver(a, b, c):
 		    """
 		    This function does something useful 
@@ -38,33 +37,33 @@ Source:	@decorator_4
 		
 Output:	['-1.0 + i2.8284271247461903', '-1.0 - i2.8284271247461903']
 
-pascal call 1 excuted in 4.410743713378906e-05 sec
+pascal call 1 excuted in 2.765655517578125e-05 sec
 Name:	pascal
 Type:	<class 'function'>
 Signs:	(n)
 Args: 	positional (5,) 
 		key=worded {}
 
-Doc:	This function prints the pascal triangle
-		:param n: number of rows
+Doc:	This function print pascal triangle
+		:param n: The number of pascal triangle rows
+		This function return None
 
-Source:	@decorator_4
-		@decorator_3
+Source:	@decorator_3
 		def pascal(n):
 		    """
-		    This function prints the pascal triangle
-		    :param n: number of rows
-		    """ 
-		    for i in range(n):
-		        # adjust space
-		        print(' '*(n-i), end='')
-		
-		        # compute power of 11
-		        print(' '.join(map(str, str(11**i))))
+		    This function print pascal triangle
+		    :param n: The number of pascal triangle rows
+		    This function return None
+		    """
+		    main_v = [1]
+		    added_v = [0]
+		    for _ in range(n):
+		        print(main_v)
+		        main_v = [left + right for left, right in zip(main_v + added_v, added_v + main_v)]
 		
 Output:	None
 
-solver call 2 excuted in 1.9073486328125e-06 sec
+solver call 2 excuted in 1.1444091796875e-05 sec
 Name:	solver
 Type:	<class 'function'>
 Signs:	(a, b, c)
@@ -75,8 +74,7 @@ Doc:	This function does something useful
 		:param bar1: description
 		:param bar2: description
 
-Source:	@decorator_4
-		@decorator_3
+Source:	@decorator_3
 		def solver(a, b, c):
 		    """
 		    This function does something useful 
@@ -104,29 +102,29 @@ Source:	@decorator_4
 		
 Output:	incorrect input
 
-pascal call 2 excuted in 4.0531158447265625e-06 sec
+pascal call 2 excuted in 1.3828277587890625e-05 sec
 Name:	pascal
 Type:	<class 'function'>
 Signs:	(n)
 Args: 	positional (0,) 
 		key=worded {}
 
-Doc:	This function prints the pascal triangle
-		:param n: number of rows
+Doc:	This function print pascal triangle
+		:param n: The number of pascal triangle rows
+		This function return None
 
-Source:	@decorator_4
-		@decorator_3
+Source:	@decorator_3
 		def pascal(n):
 		    """
-		    This function prints the pascal triangle
-		    :param n: number of rows
-		    """ 
-		    for i in range(n):
-		        # adjust space
-		        print(' '*(n-i), end='')
-		
-		        # compute power of 11
-		        print(' '.join(map(str, str(11**i))))
+		    This function print pascal triangle
+		    :param n: The number of pascal triangle rows
+		    This function return None
+		    """
+		    main_v = [1]
+		    added_v = [0]
+		    for _ in range(n):
+		        print(main_v)
+		        main_v = [left + right for left, right in zip(main_v + added_v, added_v + main_v)]
 		
 Output:	None
 

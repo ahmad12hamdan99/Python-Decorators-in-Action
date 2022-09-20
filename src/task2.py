@@ -20,6 +20,6 @@ def decorator_2(func):
         print(f'Args: \tpositional {args} \n\tkey_worded {kwargs}\n')
         print(f'Doc:\t{inspect.getdoc(func)}'.replace('\n', '\n\t'), end='\n\n')
         print(f'Source:\t{inspect.getsource(func)}'.replace('\n', '\n\t'), end='\n')
-        print(f'Output:\t{result}'.replace('\n', '\n\t'))
+        print(f'Output:\t{result}'.replace('\n', '\n\n\t') + '\n')
     wrap_func.calls = 0
     return wrap_func
