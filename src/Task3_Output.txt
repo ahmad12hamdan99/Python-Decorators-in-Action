@@ -1,22 +1,148 @@
-solver call 1 excuted in 6.270408630371094e-05 sec
+func call 1 excuted in 3.981590270996094e-05 sec
+Name:	func
+Type:	<class 'function'>
+Signs:	()
+Args: 	positional () 
+		key=worded {}
+
+Doc:	None
+
+Source:	@decorator_3
+		def func():
+		    print("I am ready to Start")
+		    result = 0
+		    n =  random.randint(10,751)
+		    for i in range(n):
+		        result += (i**2)
+		
+Output:	None
+
+funx call 1 excuted in 0.00014328956604003906 sec
+Name:	funx
+Type:	<class 'function'>
+Signs:	(n=2, m=5)
+Args: 	positional () 
+		key=worded {}
+
+Doc:	None
+
+Source:	@decorator_3
+		def funx(n=2, m=5):
+		    print("I am ready to do serious stuff")
+		    max_val = float('-inf')
+		    n =  random.randint(10,751)
+		    res = [pow(i,2) for i in range(n)]
+		    for i in res:
+		        if i > max_val: 
+		            max_val = i
+		
+Output:	None
+
+func call 2 excuted in 2.2411346435546875e-05 sec
+Name:	func
+Type:	<class 'function'>
+Signs:	()
+Args: 	positional () 
+		key=worded {}
+
+Doc:	None
+
+Source:	@decorator_3
+		def func():
+		    print("I am ready to Start")
+		    result = 0
+		    n =  random.randint(10,751)
+		    for i in range(n):
+		        result += (i**2)
+		
+Output:	None
+
+funx call 2 excuted in 0.0002651214599609375 sec
+Name:	funx
+Type:	<class 'function'>
+Signs:	(n=2, m=5)
+Args: 	positional () 
+		key=worded {}
+
+Doc:	None
+
+Source:	@decorator_3
+		def funx(n=2, m=5):
+		    print("I am ready to do serious stuff")
+		    max_val = float('-inf')
+		    n =  random.randint(10,751)
+		    res = [pow(i,2) for i in range(n)]
+		    for i in res:
+		        if i > max_val: 
+		            max_val = i
+		
+Output:	None
+
+func call 3 excuted in 5.340576171875e-05 sec
+Name:	func
+Type:	<class 'function'>
+Signs:	()
+Args: 	positional () 
+		key=worded {}
+
+Doc:	None
+
+Source:	@decorator_3
+		def func():
+		    print("I am ready to Start")
+		    result = 0
+		    n =  random.randint(10,751)
+		    for i in range(n):
+		        result += (i**2)
+		
+Output:	None
+
+even call 1 excuted in 5.245208740234375e-06 sec
+Name:	even
+Type:	<class 'function'>
+Signs:	(input_list)
+Args: 	positional ([0, 2, 3, 4, 5, 6],) 
+		key=worded {}
+
+Doc:	This function return even numbers in the given list
+		:param input_list: List that we want to search for even number inside
+		This function return the even numbers in the list
+
+Source:	@decorator_4
+		@decorator_3
+		def even(input_list):
+		    """
+		    This function return even numbers in the given list
+		    :param input_list: List that we want to search for even number inside
+		    This function return the even numbers in the list
+		    """
+		    return list(filter(lambda x: x % 2 == 0, input_list))
+		
+Output:	[0, 2, 4, 6]
+
+solver call 1 excuted in 1.0251998901367188e-05 sec
 Name:	solver
 Type:	<class 'function'>
 Signs:	(a, b, c)
 Args: 	positional (1, 2, 3) 
 		key=worded {}
 
-Doc:	This function does something useful 
-		:param bar1: description
-		:param bar2: description
+Doc:	This function solve a quadratic equation a*x^2 + b*x + c = 0
+		:param a: x^2 coeffecient
+		:param b: x   coeffecient
+		:param c:     constant
+		This function return the solution if it exist in form of list 
 
 Source:	@decorator_4
 		@decorator_3
 		def solver(a, b, c):
 		    """
-		    This function does something useful 
-		    :param bar1: description
-		    :param bar2: description
-		    """ 
+		    This function solve a quadratic equation a*x^2 + b*x + c = 0
+		    :param a: x^2 coeffecient
+		    :param b: x   coeffecient
+		    :param c:     constant
+		    This function return the solution if it exist in form of list 
+		    """
 		    if a == 0:
 		        return 'incorrect input'
 		
@@ -26,9 +152,11 @@ Source:	@decorator_4
 		
 		    # checking condition for discriminant
 		    if dis > 0:
+		        #dis is positive -> 2 solution 
 		        return [(-b + sqrt_val)/(2 * a), (-b - sqrt_val)/(2 * a)]
 		    
 		    elif dis == 0:
+		        #dis is 0 -> duplicated solution
 		        return [-b / (2 * a)]
 		    else:
 		        #Complex Roots
@@ -36,7 +164,7 @@ Source:	@decorator_4
 		
 Output:	['-1.0 + i2.8284271247461903', '-1.0 - i2.8284271247461903']
 
-pascal call 1 excuted in 2.86102294921875e-05 sec
+pascal call 1 excuted in 1.6927719116210938e-05 sec
 Name:	pascal
 Type:	<class 'function'>
 Signs:	(n)
@@ -63,25 +191,29 @@ Source:	@decorator_4
 		
 Output:	None
 
-solver call 2 excuted in 1.9073486328125e-06 sec
+solver call 2 excuted in 9.5367431640625e-07 sec
 Name:	solver
 Type:	<class 'function'>
 Signs:	(a, b, c)
 Args: 	positional (0, 0, 0) 
 		key=worded {}
 
-Doc:	This function does something useful 
-		:param bar1: description
-		:param bar2: description
+Doc:	This function solve a quadratic equation a*x^2 + b*x + c = 0
+		:param a: x^2 coeffecient
+		:param b: x   coeffecient
+		:param c:     constant
+		This function return the solution if it exist in form of list 
 
 Source:	@decorator_4
 		@decorator_3
 		def solver(a, b, c):
 		    """
-		    This function does something useful 
-		    :param bar1: description
-		    :param bar2: description
-		    """ 
+		    This function solve a quadratic equation a*x^2 + b*x + c = 0
+		    :param a: x^2 coeffecient
+		    :param b: x   coeffecient
+		    :param c:     constant
+		    This function return the solution if it exist in form of list 
+		    """
 		    if a == 0:
 		        return 'incorrect input'
 		
@@ -91,9 +223,11 @@ Source:	@decorator_4
 		
 		    # checking condition for discriminant
 		    if dis > 0:
+		        #dis is positive -> 2 solution 
 		        return [(-b + sqrt_val)/(2 * a), (-b - sqrt_val)/(2 * a)]
 		    
 		    elif dis == 0:
+		        #dis is 0 -> duplicated solution
 		        return [-b / (2 * a)]
 		    else:
 		        #Complex Roots
@@ -101,11 +235,11 @@ Source:	@decorator_4
 		
 Output:	incorrect input
 
-pascal call 2 excuted in 3.814697265625e-06 sec
+pascal call 2 excuted in 4.57763671875e-05 sec
 Name:	pascal
 Type:	<class 'function'>
 Signs:	(n)
-Args: 	positional (0,) 
+Args: 	positional (4,) 
 		key=worded {}
 
 Doc:	This function print pascal triangle
