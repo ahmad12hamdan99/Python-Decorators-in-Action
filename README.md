@@ -201,4 +201,17 @@ func          4       0.000173092s
 funx          5       0.000198126s
 ```
 
+## Task4:
+Extend your program (function or class decorator) so that if a decorated function encounters an error it wouldn’t put it back into stdout. Instead, pipe the error stream into a log file together with a timestamp.
+
+```console
+ahmad@WorkStation:~/Git/Python-Decorators-in-Action/src$ python3 main.py
+PROGRAM  |  RANK  |  TIME ELAPSED
+solver        1       0.000001907s
+even          2       0.000008345s
+pascal        3       0.000056505s
+funx          4       0.000085831s
+func          5       0.000251532s
+Error in calling err written in the log file.
+```
 
