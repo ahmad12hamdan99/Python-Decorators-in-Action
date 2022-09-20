@@ -1,4 +1,4 @@
-func call 1 excuted in 3.981590270996094e-05 sec
+func call 1 excuted in 2.5272369384765625e-05 sec
 Name:	func
 Type:	<class 'function'>
 Signs:	()
@@ -17,7 +17,7 @@ Source:	@decorator_3
 		
 Output:	None
 
-funx call 1 excuted in 0.00014328956604003906 sec
+funx call 1 excuted in 0.0002315044403076172 sec
 Name:	funx
 Type:	<class 'function'>
 Signs:	(n=2, m=5)
@@ -38,7 +38,7 @@ Source:	@decorator_3
 		
 Output:	None
 
-func call 2 excuted in 2.2411346435546875e-05 sec
+func call 2 excuted in 7.224082946777344e-05 sec
 Name:	func
 Type:	<class 'function'>
 Signs:	()
@@ -57,7 +57,7 @@ Source:	@decorator_3
 		
 Output:	None
 
-funx call 2 excuted in 0.0002651214599609375 sec
+funx call 2 excuted in 0.00025582313537597656 sec
 Name:	funx
 Type:	<class 'function'>
 Signs:	(n=2, m=5)
@@ -78,7 +78,7 @@ Source:	@decorator_3
 		
 Output:	None
 
-func call 3 excuted in 5.340576171875e-05 sec
+func call 3 excuted in 0.00019669532775878906 sec
 Name:	func
 Type:	<class 'function'>
 Signs:	()
@@ -97,7 +97,7 @@ Source:	@decorator_3
 		
 Output:	None
 
-even call 1 excuted in 5.245208740234375e-06 sec
+even call 1 excuted in 1.0967254638671875e-05 sec
 Name:	even
 Type:	<class 'function'>
 Signs:	(input_list)
@@ -120,7 +120,7 @@ Source:	@decorator_4
 		
 Output:	[0, 2, 4, 6]
 
-solver call 1 excuted in 1.0251998901367188e-05 sec
+solver call 1 excuted in 1.7881393432617188e-05 sec
 Name:	solver
 Type:	<class 'function'>
 Signs:	(a, b, c)
@@ -164,7 +164,7 @@ Source:	@decorator_4
 		
 Output:	['-1.0 + i2.8284271247461903', '-1.0 - i2.8284271247461903']
 
-pascal call 1 excuted in 1.6927719116210938e-05 sec
+pascal call 1 excuted in 3.886222839355469e-05 sec
 Name:	pascal
 Type:	<class 'function'>
 Signs:	(n)
@@ -191,7 +191,7 @@ Source:	@decorator_4
 		
 Output:	None
 
-solver call 2 excuted in 9.5367431640625e-07 sec
+solver call 2 excuted in 2.86102294921875e-06 sec
 Name:	solver
 Type:	<class 'function'>
 Signs:	(a, b, c)
@@ -235,7 +235,7 @@ Source:	@decorator_4
 		
 Output:	incorrect input
 
-pascal call 2 excuted in 4.57763671875e-05 sec
+pascal call 2 excuted in 1.7881393432617188e-05 sec
 Name:	pascal
 Type:	<class 'function'>
 Signs:	(n)
