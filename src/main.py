@@ -5,9 +5,9 @@ from task2 import decorator_2
 from task3 import decorator_3
 from task4 import decorator_4
 
+test_decorator = decorator_4
 
-#@decorator_4
-@decorator_2
+@test_decorator
 def even(input_list):
     """
     This function return even numbers in the given list
@@ -16,7 +16,7 @@ def even(input_list):
     """
     return list(filter(lambda x: x % 2 == 0, input_list))
 
-@decorator_3
+@test_decorator
 def func():
     print("I am ready to Start")
     result = 0
@@ -24,7 +24,7 @@ def func():
     for i in range(n):
         result += (i**2)
         
-@decorator_3
+@test_decorator
 def funx(n=2, m=5):
     print("I am ready to do serious stuff")
     max_val = float('-inf')
@@ -36,8 +36,7 @@ def funx(n=2, m=5):
 
 
 
-@decorator_4
-@decorator_3
+@test_decorator
 def solver(a, b, c):
     """
     This function solve a quadratic equation a*x^2 + b*x + c = 0
@@ -66,8 +65,7 @@ def solver(a, b, c):
         return [str(-b / (2 * a)) + " + i" + str(sqrt_val) , str(-b / (2 * a)) + " - i" + str(sqrt_val)]
 
 
-#@decorator_4
-@decorator_3
+@test_decorator
 def pascal(n):
     """
     This function print pascal triangle
@@ -80,9 +78,8 @@ def pascal(n):
         print(main_v)
         main_v = [left + right for left, right in zip(main_v + added_v, added_v + main_v)]
 
-@decorator_4
-@decorator_3
-def err(n):
+@test_decorator
+def err_func(n):
     """
     This function divides 1 by n
     :param n: int
@@ -96,15 +93,15 @@ if __name__ == '__main__':
     pascal(3)
     func()
     pascal(3)
-    # funx()
-    # func()
-    # funx()
-    # func()
-    # even([0,2,3,4,5,6])
-    # solver(1,2,3)
-    # pascal(5)
-    # solver(0,0,0)
-    # pascal(4)
-    decorator_3.ranking()
-    # err(0)
+    funx()
+    func()
+    funx()
+    func()
+    even([0,2,3,4,5,6])
+    solver(1,2,3)
+    pascal(5)
+    solver(0,0,0)
+    pascal(4)
+    decorator_4.ranking()
+    # err_func(0)
 

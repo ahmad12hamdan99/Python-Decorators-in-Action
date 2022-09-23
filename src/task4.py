@@ -6,7 +6,9 @@ import sys
 import traceback
 from datetime import datetime
 
-class decorator_4:
+from task3 import decorator_3
+
+class decorator_4(decorator_3):
     dic_time = {}
 
     def __init__(self, func):
@@ -15,7 +17,7 @@ class decorator_4:
 
     def __call__(self, *args, **kwargs):
         try:
-            res = self.function(*args, **kwargs)
+            res = super().__call__(*args, **kwargs)
             return res
         except Exception as e:
             tb = sys.exc_info()[-1]
