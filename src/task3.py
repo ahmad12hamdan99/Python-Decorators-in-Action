@@ -4,6 +4,7 @@ import io
 import inspect
 import contextlib
 
+#  really smooth looking way to structure the class
 class decorator_3:
     dic_time = {}
 

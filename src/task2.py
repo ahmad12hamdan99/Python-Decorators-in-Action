@@ -6,7 +6,7 @@ import io
 
 
     
-
+#  maybe better speacing in between can be added to make the code look neater
 def decorator_2(func):
     # This function shows the execution time of 
     # the function object passed
