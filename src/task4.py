@@ -23,4 +23,5 @@ class decorator_4:
             with open('log_file.txt', 'a+') as f:
                 f.write(f'{datetime.strftime(datetime.now(), f"%y-%m-%d %H:%M:%S: ")}function {stk[2][2]} {e} \n')
             print(f'Error in calling {stk[2][2]} written in the log file.')
+        # why do you return None here outside the except block but Return res inside the try block
         return None

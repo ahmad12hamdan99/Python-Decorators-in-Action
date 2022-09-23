@@ -2,6 +2,7 @@ from time import time
 import contextlib
 import io
 
+#  maybe it  is better to use doc quotes instead of comment to explain what the function does
 def decorator_1(func):
     # This function shows the execution time of 
     # the function object passed
