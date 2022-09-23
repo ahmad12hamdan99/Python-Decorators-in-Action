@@ -8,8 +8,9 @@ import io
     
 
 def decorator_2(func):
-    # This function shows the execution time of 
-    # the function object passed
+    """
+    This function shows the execution time of the function object passed
+    """
     def wrap_func(*args, **kwargs):
         f = io.StringIO()
         t1 = time()

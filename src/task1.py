@@ -2,9 +2,11 @@ from time import time
 import contextlib
 import io
 
+
 def decorator_1(func):
-    # This function shows the execution time of 
-    # the function object passed
+    """
+    This function shows the execution time of the function object passed
+    """
     def wrap_func(*args, **kwargs):
         f = io.StringIO()
         wrap_func.calls += 1
@@ -17,4 +19,3 @@ def decorator_1(func):
         return s
     wrap_func.calls = 0
     return wrap_func
-  
